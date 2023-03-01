@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KARBEZ Design</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -22,7 +23,7 @@
 
             <div class="header__logo">
               <a class="logo" href="#">
-                <img src="images/logo.png" alt="логотип">
+                <img class="logo__img" src="images/logo.png" alt="логотип">
               </a>
             </div>
 
@@ -190,7 +191,7 @@
 
     </section>
 
-    <section class="section about">
+    <!-- <section class="section about">
 
       <div class="container">
 
@@ -257,11 +258,11 @@
 
       </div>
 
-    </section>
+    </section> -->
 
   </main>
 
-  <footer class="footer section">
+  <!-- <footer class="footer section">
 
     <div class="container">
 
@@ -274,14 +275,50 @@
 
       </div>
 
-      <a class="footer__bottom_link" href="#">
+      <button type="button" class="btn footer__bottom_link" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Оставить заявку
-      </a>
+      </button>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+          <div class="modal-content">
+
+            <div class="modal-header">
+
+              <h1 class="modal-title" id="exampleModalLabel">Заголовок</h1>
+
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+              <form action="#" class="footer__modal">
+
+                <input type="text" class="footer__input" placeholder="Имя">
+                <input type="tel" class="footer__input" placeholder="Номер телефона">
+
+              </form>
+
+            </div>
+
+            <div class="modal-footer">
+
+              <button type="submit" class="btn">Оставить заявку</button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
 
     <div class="container_2">
-      
+
       <div class="container">
 
         <div class="footer__down">
@@ -299,9 +336,10 @@
       </div>
     </div>
 
-  </footer>
+  </footer> -->
 
 
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
