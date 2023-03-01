@@ -1,0 +1,305 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'libs';
+
+.header {
+  height: 800px;
+  color: #fff;
+
+  &__container {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $accent1;
+      width: 50%;
+      height: 800px;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $accent2;
+      width: 50%;
+      height: 800px;
+      z-index: -1;
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__right {
+    margin-top: 85px;
+    width: 200px;
+    margin-right: -125px;
+  }
+
+  &__link {
+    color: black;
+    font-size: 22px;
+    @extend %inter600;
+    transition: all .3s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__inner {
+    width: 50%;
+    height: 800px;
+  }
+
+  &__title {
+    font-size: 50px;
+    line-height: 130%;
+    margin-bottom: 25px;
+    @extend %inter600;
+  }
+
+  &__text {
+    margin-bottom: 55px;
+  }
+
+  &__input {
+    width: 450px;
+    border-bottom: 1px solid #fff;
+    padding: 10px 20px;
+    background-color: $accent1;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 25px;
+    color: #fff;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  &__button {
+    padding: 15px 88px;
+    background-color: #fff;
+    @extend %inter600;
+    color: black;
+    transition: all .3s;
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+
+.info {
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
+
+  &__item {
+    width: 255px;
+  }
+
+  &__item:not(:last-child) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      right: -25px;
+      height: 90px;
+      width: 1px;
+      background-color: black;
+    }
+  }
+
+  &__title {
+    font-size: 17px;
+    @extend %inter600;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    width: 225px;
+  }
+
+  &__images {
+    background-color: $accent2;
+    height: 550px;
+  }
+}
+
+.portfolio {
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 100px;
+  }
+
+  &__item {
+    width: 550px;
+    height: 448px;
+    background-color: $accent2;
+  }
+}
+
+.rate {
+
+  &__box {
+    width: 100%;
+    height: 655px;
+    background-color: $accent2;
+  }
+}
+
+.review {
+
+  &__img {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.about {
+
+
+  &__info {
+    width: 700px;
+  }
+
+  &__title {
+    font-size: 32px;
+    @extend %inter400;
+    margin-bottom: 25px;
+    line-height: 130%;
+  }
+
+  &__text {
+    line-height: 130%;
+    margin-bottom: 40px;
+  }
+
+  &__images {
+    height: 550px;
+    background-color: $accent2;
+  }
+
+  &__bottom {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 100px;
+  }
+
+  &__item {
+    width: 350px;
+
+    &_img {
+      width: 350px;
+      height: 400px;
+      background-color: $accent2;
+      margin-bottom: 30px;
+    }
+
+    &_text {
+      font-size: 32px;
+      @extend %inter400;
+      line-height: 130%;
+    }
+  }
+}
+
+.footer {
+
+  &__links {
+    width: 870px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+
+  &__link {
+    font-size: 32px;
+    line-height: 130%;
+    @extend %inter400;
+    transition: all .3s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__bottom_link {
+    text-align: center;
+    padding: 18px 45px;
+    background-color: red;
+    color: #fff;
+    width: 237px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 125px;
+    transition: all .3s;
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  .container_2 {
+    background-color: #1A1A1A;
+  }
+
+  &__down {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+
+    &__text {
+      display: block;
+    }
+
+    &_link {
+      color: #999999;
+      transition: all .3s;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+
+
+
+@import 'media';

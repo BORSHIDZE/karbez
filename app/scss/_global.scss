@@ -1,0 +1,33 @@
+body {
+  font-size: 16px;
+  line-height: 130%;
+  @extend %inter300;
+  color: black;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container_2 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 150px;
+}
+
+.title {
+  font-size: 95px;
+  @extend %inter500;
+  text-align: end;
+  color: $accent1;
+  line-height: 130%;
+  margin-bottom: 55px;
+
+  &__sub {
+    color: black;
+  }
+}
