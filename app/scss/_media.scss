@@ -1,10 +1,14 @@
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .header {
 
     &__right {
       margin-right: 0;
     }
   }
+}
+
+@media (max-width: 1200px) {
+
 
   .info {
 
@@ -165,6 +169,10 @@
       width: 350px;
       margin: 0 auto;
       margin-bottom: 40px;
+
+      &:not(:last-child) {
+        margin-right: auto;
+      }
     }
   }
 
