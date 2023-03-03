@@ -6,4 +6,9 @@ $(function name(params) {
     fade: true,
   });
 
+  $('.portfolio__slider').slick({
+    arrows: false,
+    dots: false,
+  });
+
 })  
