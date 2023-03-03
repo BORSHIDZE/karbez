@@ -13,55 +13,75 @@
 <body>
 
   <header class="header">
-    <div class="container_2 header__container">
+    <div class="container">
 
-      <div class="container">
+      <div class="header__top">
 
-        <div class="header__box">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.png" alt="логотип">
+        </a>
 
-          <div class="header__inner">
+        <a class="header__number" href="tel:+77071092949">
+          +7 (707) 109 29 49
+        </a>
 
-            <div class="header__logo">
-              <a class="logo" href="#">
-                <img class="logo__img" src="images/logo.png" alt="логотип">
-              </a>
+      </div>
+
+      <div class="header__inner">
+
+        <h1 class="header__title">
+          Создаем интерьеры, которые повышают качество жизни.
+        </h1>
+
+        <div class="header__text">
+          Наша студия дизайна интерьера специализируется на создании функциональных и красивых пространств, которые
+          отражают вашу
+          индивидуальность и жизненный стиль. Мы поможем вам воплотить в жизнь ваши идеи и создать интерьер вашей мечты.
+        </div>
+
+        <button type="button" class="btn header__button button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Оставить заявку
+      </button>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+          <div class="modal-content">
+
+            <div class="modal-header">
+
+              <h1 class="modal-title header__modal_title" id="exampleModalLabel">Заголовок</h1>
+
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
-            <div class="header__content">
+            <div class="modal-body">
 
-              <h1 class="header__title">
-                Создаем интерьеры, которые повышают качество жизни.
-              </h1>
+              <form action="#" class="footer__modal">
 
-              <p class="header__text">
-                Наша студия дизайна интерьера специализируется на создании функциональных и красивых пространств,
-                которые
-                отражают вашу
-                индивидуальность и жизненный стиль. Мы поможем вам воплотить в жизнь ваши идеи и создать интерьер вашей
-                мечты.
-              </p>
+                <input type="text" class="footer__input" placeholder="Имя">
+                <input type="tel" class="footer__input" placeholder="Номер телефона">
 
-              <form action="#" class="header__form">
-
-                <input class="header__input" type="text" placeholder="Номер телефона">
-
-                <button class="header__button" type="submit">Оставить заявку на консультацию</button>
               </form>
+
+            </div>
+
+            <div class="modal-footer">
+
+              <button type="submit" class="btn">Оставить заявку</button>
 
             </div>
 
           </div>
 
-          <span class="header__right">
-            <a class="header__link" href="tel:+77071092949">+7 (707) 109 29 49</a>
-          </span>
-
         </div>
 
       </div>
 
-    </div>
+      </div>
 
+    </div>
   </header>
 
   <main>
@@ -69,13 +89,13 @@
 
       <div class="container">
 
-        <h2 class="title">
-          Наши клиенты <span class="title__sub">доверяют нам:</span>
+        <h2 class="title title_2">
+          Наши клиенты <br><span class="title__sub">доверяют нам</span>
         </h2>
 
         <div class="info__content">
 
-          <div class="info__item">
+          <div class="info__item info__item_line">
 
             <h3 class="info__title">
               Креативные идеи:
@@ -86,6 +106,7 @@
             </p>
 
           </div>
+
           <div class="info__item">
 
             <h3 class="info__title">
@@ -97,7 +118,8 @@
             </p>
 
           </div>
-          <div class="info__item">
+
+          <div class="info__item info__item_line">
 
             <h3 class="info__title">
               Экономия времени и денег:
@@ -108,6 +130,7 @@
             </p>
 
           </div>
+
           <div class="info__item">
 
             <h3 class="info__title">
@@ -124,34 +147,70 @@
 
       </div>
 
-      <div class="container_2">
-        <div class="info__images">
-          <img class="info__img" src="images/info/1.png" alt="картинка">
-        </div>
-      </div>
-
     </section>
 
     <section class="section portfolio">
 
       <div class="container">
 
-        <h2 class="title">Порфтолио:</h2>
+        <h2 class="title portfolio__title">
+          Портфолио
+        </h2>
 
-        <ul class="portfolio__list">
-          <li class="portfolio__item">
-            <img class="portfolio__img" src="images/portfolio/1.jpg" alt="картинки">
-          </li>
-          <li class="portfolio__item">
-            <img class="portfolio__img" src="images/portfolio/1.jpg" alt="картинки">
-          </li>
-          <li class="portfolio__item">
-            <img class="portfolio__img" src="images/portfolio/1.jpg" alt="картинки">
-          </li>
-          <li class="portfolio__item">
-            <img class="portfolio__img" src="images/portfolio/1.jpg" alt="картинки">
-          </li>
-        </ul>
+        <div class="portfolio__inner">
+
+          <div class="portfolio__item">
+            <h3 class="portfolio__subtitle">
+              Крокус Сити г.Астана
+            </h3>
+
+            <p class="portfolio__text">
+              Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста, но
+              является
+              случайным набором слов или сгенерирован иным образом. Его можно использовать для отображения образца
+              шрифтов, создания
+              текста для тестирования или обхода спам-фильтра
+            </p>
+
+            <div class="portfolio__box">
+
+              <img class="portfolio__img" src="images/portfolio/1.jpg" alt="примеры работ">
+
+              <img class="portfolio__img portfolio__img_center" src="images/portfolio/2.jpg" alt="примеры работ">
+
+              <img class="portfolio__img" src="images/portfolio/3.jpg" alt="примеры работ">
+
+
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <h3 class="portfolio__subtitle">
+              Загородный дом
+            </h3>
+
+            <p class="portfolio__text">
+              Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста, но
+              является
+              случайным набором слов или сгенерирован иным образом. Его можно использовать для отображения образца
+              шрифтов, создания
+              текста для тестирования или обхода спам-фильтра
+            </p>
+
+            <div class="portfolio__box">
+
+              <img class="portfolio__img" src="images/portfolio/4.jpg" alt="примеры работ">
+
+              <img class="portfolio__img portfolio__img_center" src="images/portfolio/5.jpg" alt="примеры работ">
+
+              <img class="portfolio__img" src="images/portfolio/6.jpg" alt="примеры работ">
+
+
+            </div>
+          </div>
+
+        </div>
+
 
       </div>
 
@@ -165,7 +224,108 @@
 
         <div class="rate__box">
 
-          <img class="rate__img" src="images/rate/1.jpg" alt="картинка">
+          <div class="rate__item rate__item_top">
+
+            <p class="rate__service_top rate__item_text">Вид услуги</p>
+
+            <p class="rate__work_top rate__item_text">Виды работ</p>
+
+            <p class="rate__price_top rate__item_text">Стоимость, тг.</p>
+
+          </div>
+
+          <div class="rate__item">
+
+            <p class="rate__service  rate__item_text">Экспресс - проект</p>
+
+            <p class="rate__work rate__item_text">- Подготовка технического задания;
+              - Обмерный план;
+              - Демонтажный план;
+              - План возводимых перегородок;
+              - Расстановка мебели (несколько вариантов)
+            </p>
+
+            <p class="rate__price rate__item_text">3000 тг/кв.м.</p>
+
+          </div>
+
+          <div class="rate__item">
+
+            <p class="rate__service  rate__item_text">Усеченный дизайн-проект (планировочные решения+рабочая
+              документация)
+            </p>
+
+            <p class="rate__work rate__item_text"> - Подготовка технического задания;
+              - Обмерный план;
+              - Демонтажный план;
+              - План возводимых перегородок;
+              - План расстановки мебели;
+              - План розеток;
+              - План светильников и выключателей,
+              - План полов,
+              - Детализация проекта;
+
+            </p>
+
+            <p class="rate__price rate__item_text">5000 тг/кв.м.</p>
+
+          </div>
+
+          <div class="rate__item">
+
+            <p class="rate__service  rate__item_text">Полный дизайн-проект (планировочные решения+рабочая
+              документация+подбор отделочных материалов, визуализация объекта)</p>
+
+            <p class="rate__work rate__item_text"> - Подготовка технического задания;
+              - Обмерный план;
+              - Демонтажный план;
+              - План возводимых перегородок;
+              - План расстановки мебели;
+              - План розеток;
+              - План светильников и выключателей,
+              - План полов,
+              - Детализация проекта;
+              - 3д визуализация основных комнат
+
+            </p>
+
+            <p class="rate__price rate__item_text">8000 тг/кв.м.</p>
+
+          </div>
+
+          <div class="rate__item">
+
+            <p class="rate__service  rate__item_text">Авторский надзор</p>
+
+            <p class="rate__work rate__item_text">- - Соблюдение идей и разработок дизайнера;
+              - Выезд на объект и консультация со строителями (в неделю 2 раза, отдельно оговаривается в договоре);
+              - Помощь в подборе отделочных материалов для будущего интерьера;
+              - Консультация в подборе сантехники, плитки, мебели, и др.
+
+            </p>
+
+            <p class="rate__price rate__item_text">В месяц – 200000 тг,
+              Разовый выезд на объект – 20000 тг
+            </p>
+
+          </div>
+
+          <div class="rate__item">
+
+            <p class="rate__service  rate__item_text">Консультация дизайнера</p>
+
+            <p class="rate__work rate__item_text">- - Советы по выбору квартиры с учетом планируемого интерьера;
+              - Возможные варианты перепланировки
+              - Возможные варианты переделки старой квартиры или нежилого помещения;
+              - Советы по декорированию интерьера;
+              - Предварительные планировочные решения;
+              - Оптимизация площадей, имеющихся в квартире
+
+            </p>
+
+            <p class="rate__price rate__item_text">20000 тг. за 2 ч. консультации</p>
+
+          </div>
 
         </div>
 
@@ -178,12 +338,59 @@
       <div class="container">
 
         <h2 class="title">Отзывы:</h2>
-      </div>
-      <div class="container_2">
 
-        <div class="review__box">
+        <div class="review__slider">
 
-          <img class="review__img" src="images/review/1.jpg" alt="отзывы">
+          <div class="review__box">
+
+            <h4 class="review__name">Диана</h4>
+
+            <p class="review__text">Мы из Павлодара, купили квартиру в Алматы в черновой отделке, встал вопрос ремонта,
+              обратились в дизайн студию "Kerbez Design". В кратчайшие сроки разработали дизайн-проект, который
+              утвердила в
+              онлайн режиме. Приезжала в два месяца один раз, чтобы контролировать процесс строительства, остальное
+              время
+              работники студии вели авторский надзор. Все было закончено в оговоренные сроки. Очень довольны работой
+              специалистов студии. Успехов вам и процветания в Вашем нелегком труде!</p>
+
+          </div>
+
+          <div class="review__box">
+
+            <h4 class="review__name">Комеков Айбек</h4>
+
+            <p class="review__text">Купил новую квартиру и встал вопрос с ремонтом. Я точно знал, чего я хочу, поэтому
+              мы с
+              дизайнером быстро нашли общий язык. Создали проект, визуализировали, сделали. Все вышло так, как я и
+              хотел.
+              Оперативно, качественно, профессионально. Молодцы.</p>
+
+          </div>
+
+          <div class="review__box">
+
+            <h4 class="review__name">Кожахметов Бауыржан</h4>
+
+            <p class="review__text">Данную студию мне посетовал мой знакомый. Сразу же заказал дизайн-проект. Девочки
+              работают
+              очень оперативно, работа шла параллельно, разрабатывалась 3d картинка и соответствующие чертежи к ним, и
+              тут же
+              реализовывалась. В итоге начав ремонт дома площадью 500 кв.м. весной, мы закончили его в сентябре. Очень
+              благодарен данной студии и советую всем.</p>
+
+          </div>
+
+          <div class="review__box">
+
+            <h4 class="review__name">Жанна</h4>
+
+            <p class="review__text">Давно хотели с мужем обустроить квартиру. Обратились в эту студию и не прогадали!
+              Дизайнеры
+              учли все наши предпочтения и создали стильный проект, при этом уложились в бюджет. Сделали все
+              качественно,
+              быстрее чем мы ожидали. Рекомендуем.</p>
+
+          </div>
 
         </div>
 
@@ -204,59 +411,64 @@
             души.
           </h4>
 
-          <p class="about__text">
-            Разработка проектов производится  на новых программах, что сокращает сроки реализации проекта. Также имеются
-            строительные организации - партнеры, строительные бригады с которыми мы работаем на протяжении 5 лет. Все
-            этапы работ,
-            которые мы выполняем  в рамках проекта, оформляются отдельными  договорами. Данный формат позволяет
-            заказчику
-            разобраться, из чего состоит каждый этап работы, какой результат стоит ожидать, а также дает возможность
-            заказчику
-            привлекать дизайнера строго на определенный вид работ.
-          </p>
+          <div class="about__box_text">
 
-        </div>
-
-      </div>
-
-      <div class="container_2">
-
-        <div class="about__images">
-          <img class="about__img" src="images/about/1.jpg" alt="картинка">
-        </div>
-
-      </div>
-
-      <div class="container">
-
-        <h2 class="title">
-          Сотрудники <span class="title__sub">компании:</span>
-        </h2>
-
-        <div class="about__bottom">
-
-          <div class="about__item">
-
-            <img class="about__item_img" src="images/about/2.jpg" alt="сотрудники">
-
-            <p class="about__item_text">
-              Алтын – дизайнер интерьера со стажем более 7 лет, телефон
+            <p class="about__text">
+              Разработка проектов производится  на новых программах, что сокращает сроки реализации проекта. Также
+              имеются
+              строительные организации - партнеры, строительные бригады с которыми мы работаем на протяжении 5 лет. Все
+              этапы работ,
+              которые мы выполняем  в рамках проекта, оформляются отдельными  договорами.
             </p>
 
-          </div>
-          <div class="about__item">
-
-            <img class="about__item_img" src="images/about/2.jpg" alt="сотрудники">
-
-            <p class="about__item_text">
-              Айнур - дизайнер интерьера со стажем более 5 лет, телефон
+            <p class="about__text">
+              Данный формат позволяет
+              заказчику
+              разобраться, из чего состоит каждый этап работы, какой результат стоит ожидать, а также дает возможность
+              заказчику
+              привлекать дизайнера строго на определенный вид работ.
             </p>
 
           </div>
 
         </div>
 
-      </div>
+        <div class="about__box">
+          <img class="about__img" src="images/about/1.jpg" alt="комната">
+        </div>
+
+
+
+        <div class="container">
+
+          <h2 class="title">
+            Сотрудники <span class="title__sub">компании:</span>
+          </h2>
+
+          <div class="about__bottom">
+
+            <div class="about__item">
+
+              <img class="about__item_img" src="images/about/2.jpg" alt="сотрудники">
+
+              <p class="about__item_text">
+                Алтын – дизайнер интерьера со стажем более 7 лет, телефон
+              </p>
+
+            </div>
+            <div class="about__item">
+
+              <img class="about__item_img" src="images/about/2.jpg" alt="сотрудники">
+
+              <p class="about__item_text">
+                Айнур - дизайнер интерьера со стажем более 5 лет, телефон
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
 
     </section>
 
@@ -275,7 +487,7 @@
 
       </div>
 
-      <button type="button" class="btn footer__bottom_link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <button type="button" class="btn footer__bottom_link button" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Оставить заявку
       </button>
 

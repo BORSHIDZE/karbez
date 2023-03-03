@@ -8,26 +8,44 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 5px;
 }
 
-.container_2 {
-  width: 100%;
-  margin: 0 auto;
-}
 
 .section {
   padding-top: 150px;
 }
 
+.logo {
+  width: 120px;
+  height: 86px;
+}
+
 .title {
-  font-size: 95px;
+  font-size: 85px;
   @extend %inter500;
-  text-align: end;
   color: $accent1;
   line-height: 130%;
   margin-bottom: 55px;
 
   &__sub {
     color: black;
+  }
+}
+
+.title_2 {
+  margin-bottom: 100px;
+}
+
+.button {
+  padding: 20px 110px;
+  background-color: $accent1;
+  color: #fff;
+  font-size: 17px;
+  @extend %inter600;
+  transition: all .3s ;
+
+  &:active {
+    opacity: 0.7;
   }
 }

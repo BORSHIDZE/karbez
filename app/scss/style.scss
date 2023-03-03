@@ -5,48 +5,20 @@
 @import 'libs';
 
 .header {
-  height: 800px;
+  height: 100vh;
+  background-image: url('../images/header/1.jpg');
+  @extend %bg;
   color: #fff;
 
-  &__container {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-color: $accent1;
-      width: 50%;
-      height: 800px;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-color: $accent2;
-      width: 50%;
-      height: 800px;
-      z-index: -1;
-    }
-  }
-
-  &__box {
+  &__top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 130px;
   }
 
-  &__right {
-    margin-top: 85px;
-    width: 200px;
-    margin-right: -125px;
-  }
-
-  &__link {
-    color: black;
+  &__number {
     font-size: 22px;
     @extend %inter600;
     transition: all .3s;
@@ -61,62 +33,62 @@
   }
 
   &__inner {
-    width: 50%;
-    height: 800px;
+    text-align: center;
   }
 
   &__title {
-    font-size: 50px;
-    line-height: 130%;
-    margin-bottom: 25px;
+    font-size: 75px;
+    line-height: 115%;
     @extend %inter600;
+    margin-bottom: 30px;
   }
 
   &__text {
+    width: 700px;
+    font-size: 19px;
+    @extend %inter400;
+    margin: 0 auto;
     margin-bottom: 55px;
   }
 
-  &__input {
-    width: 450px;
-    border-bottom: 1px solid #fff;
-    padding: 10px 20px;
-    background-color: $accent1;
-    font-size: 16px;
-    line-height: 130%;
-    margin-bottom: 25px;
-    color: #fff;
-
-    &::placeholder {
-      color: #fff;
-    }
-  }
-
-  &__button {
-    padding: 15px 88px;
-    background-color: #fff;
-    @extend %inter600;
+  &__modal_title {
     color: black;
-    transition: all .3s;
-
-    &:active {
-      opacity: 0.5;
-    }
   }
+
 }
 
 .info {
+  padding-bottom: 120px;
+  margin-bottom: 250px;
+
+  &__title {
+    margin-bottom: 100px;
+  }
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 45px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px 90px;
+    width: 570px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url('../images/info/1.jpg');
+      @extend %bg;
+      top: -170px;
+      right: -850px;
+      width: 800px;
+      height: 650px;
+    }
   }
 
   &__item {
     width: 255px;
   }
 
-  &__item:not(:last-child) {
+  &__item_line:not(:last-child) {
     position: relative;
 
     &::after {
@@ -147,42 +119,123 @@
 }
 
 .portfolio {
+  background-color: black;
+  color: #fff;
+  padding-top: 50px;
 
-  &__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px 100px;
+  &__title {
+    // text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    //   1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    font-size: 125px;
   }
 
-  &__item {
-    width: 550px;
-    height: 448px;
-    background-color: $accent2;
+
+  &__subtitle {
+    font-size: 25px;
+    @extend %inter500;
+    margin-bottom: 20px;
   }
+
+  &__text {
+    font-size: 16px;
+    @extend %inter400;
+    margin-bottom: 40px;
+    width: 650px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+  }
+
+  &__img_center {
+    height: 450px;
+  }
+
 }
 
 .rate {
 
   &__box {
+    background-color: transparent;
     width: 100%;
-    height: 655px;
-    background-color: $accent2;
+    height: auto;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    padding: 30px;
+  }
+
+  &__item_text {
+    width: 350px;
+  }
+
+  &__service_top,
+  &__work_top,
+  &__price_top {
+    font-size: 25px;
+  }
+
+  &__service,
+  &__work,
+  &__price {
+    font-size: 18px;
   }
 }
 
+
 .review {
 
-  &__img {
+  &__slider {
     margin: 0 auto;
-    display: block;
+    width: 600px;
+    margin-top: 150px;
+  }
+
+  .slick-arrow {
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+  }
+
+  .slick-prev {
+    position: absolute;
+    top: 40px;
+    left: 900px;
+    background-image: url('../images/slider/arrow-left.svg');
+    @extend %bg;
+  }
+
+  .slick-next {
+    position: absolute;
+    top: 40px;
+    left: -350px;
+    background-image: url('../images/slider/arrow-left.svg');
+    @extend %bg;
+    transform: rotate(180deg);
+  }
+
+  &__box {
+    width: 500px !important;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  &__name {
+    margin-bottom: 15px;
   }
 }
 
 .about {
-
+  padding-top: 100px;
 
   &__info {
-    width: 700px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__title {
@@ -190,16 +243,19 @@
     @extend %inter400;
     margin-bottom: 25px;
     line-height: 130%;
+    width: 560px;
   }
 
   &__text {
     line-height: 130%;
     margin-bottom: 40px;
+    width: 580px;
+    margin-bottom: 25px;
   }
 
-  &__images {
-    height: 550px;
-    background-color: $accent2;
+  &__box {
+    display: block;
+    margin-bottom: 120px;
   }
 
   &__bottom {
@@ -231,7 +287,6 @@
 
   &__links {
     width: 870px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
@@ -254,19 +309,10 @@
 
   &__bottom_link {
     text-align: center;
-    padding: 18px 45px;
-    background-color: red;
     color: #fff;
-    width: 237px;
-    margin: 0 auto;
     display: block;
     margin-bottom: 125px;
     transition: all .3s;
-
-    &:active {
-      opacity: 0.5;
-      background-color: red;
-    }
   }
 
   .container_2 {
@@ -274,7 +320,6 @@
   }
 
   &__down {
-    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -304,7 +349,7 @@
     margin-bottom: 25px;
     border-bottom: 1px solid $accent1;
     padding: 10px 10px;
-    
+
     &::placeholder {
       color: black;
     }
@@ -321,27 +366,32 @@
 }
 
 .btn {
-  background-color: red;
-  padding: 10px 20px;
+  background-color: $accent1;
   border: none;
   color: #fff;
   transition: all .3s;
+  border-radius: 0;
 
   &:hover {
-    background-color: red;
+    background-color: $accent1;
     color: #fff;
   }
 
   &:active {
-    background-color: red;
+    background-color: $accent1 !important;
     border-color: red;
     opacity: 0.5;
+    color: #fff;
+  }
+
+  &:focus-visible {
+    background-color: $accent1;
     color: #fff;
   }
 }
 
 .btn.active {
-  background-color: red;
+  background-color: $accent1;
 }
 
 
